@@ -4,6 +4,7 @@ import android.media.Image
 import java.util.*
 
 class Car {
+    private var car2 = Car()
 
     var modelName: String? = null
     var brandName: String? = null
@@ -16,6 +17,7 @@ class Car {
     var image: Image? = null
     var transmission : String? = null
     var gearType : String? = null
+
 
 
 }

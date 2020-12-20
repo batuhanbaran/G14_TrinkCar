@@ -5,9 +5,7 @@
     android:id="@+id/image"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orderInCategory="100"
-    android:padding="25dp"
-    android:title="picture">
+
 
     <EditText
         android:id="@+id/brandName"
@@ -15,7 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Brand Name"
-        android:inputType="textPersonName"
+
         app:layout_constraintBaseline_toBaselineOf="@+id/modelName"
         app:layout_constraintEnd_toStartOf="@+id/modelName"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -29,7 +27,7 @@
         android:layout_marginRight="2dp"
         android:ems="10"
         android:hint="Price"
-        android:inputType="textPersonName"
+
         app:layout_constraintBaseline_toBaselineOf="@+id/fuelType"
         app:layout_constraintEnd_toStartOf="@+id/fuelType"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -67,7 +65,7 @@
         android:layout_marginRight="1dp"
         android:ems="10"
         android:hint="Gear-Type"
-        android:inputType="textPersonName"
+
         app:layout_constraintBaseline_toBaselineOf="@+id/kilometer"
         app:layout_constraintEnd_toStartOf="@+id/kilometer"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -85,16 +83,6 @@
         app:layout_constraintStart_toEndOf="@+id/gearType"
         app:layout_constraintTop_toBottomOf="@+id/fuelType" />
 
-    <Button
-        android:id="@+id/btnokk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="135dp"
-        android:layout_marginRight="135dp"
-        android:layout_marginBottom="57dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
