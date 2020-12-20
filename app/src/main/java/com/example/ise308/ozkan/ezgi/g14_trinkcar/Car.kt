@@ -19,11 +19,5 @@ class Car {
     var gearType : String? = null
 
 
-    fun createNewNote() {
-
-        print(this.brandName + "brand")
-
-    }
-
 
 }

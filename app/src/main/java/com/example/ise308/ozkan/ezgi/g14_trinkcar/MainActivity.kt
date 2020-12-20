@@ -1,5 +1,6 @@
 package com.example.ise308.ozkan.ezgi.g14_trinkcar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
-        inflater.inflate(R.menu.car_new_menu, menu)
+
         return super.onCreateOptionsMenu(menu)
     }
 
