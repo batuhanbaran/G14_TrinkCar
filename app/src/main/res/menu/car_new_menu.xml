@@ -14,7 +14,7 @@
     <item
         android:id="@+id/image"
         android:icon="@drawable/done"
-        android:title="Item One"
+        android:title="picture"
         app:showAsAction="always" />
 
 
