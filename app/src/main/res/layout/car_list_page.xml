@@ -24,26 +24,50 @@
 
         <TextView
             android:id="@+id/brandName"
-            android:textSize="22sp"
-            android:text="brand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:layout_toRightOf="@+id/img"
             android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="brand"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/modelName"
-            android:textSize="18sp"
-            android:text="model"
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:layout_toRightOf="@+id/img"
-            android:layout_below="@+id/brandName"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp" />
+            android:layout_alignEnd="@+id/brandName"
+            android:layout_alignRight="@+id/brandName"
+            android:layout_alignBottom="@+id/brandName"
+            android:layout_marginEnd="-74dp"
+            android:layout_marginRight="-74dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img"
+            android:layout_alignRight="@+id/img"
+            android:layout_alignBottom="@+id/img"
+            android:layout_marginEnd="-78dp"
+            android:layout_marginRight="-78dp"
+            android:layout_marginBottom="14dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginEnd="-73dp"
+            android:layout_marginRight="-73dp"
+            android:layout_marginBottom="-1dp"
+            android:text="TextView" />
 
     </RelativeLayout>
 

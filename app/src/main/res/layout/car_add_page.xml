@@ -7,143 +7,150 @@
     android:background="#CAC9C9"
     app:layout_constraintCircleRadius="30dp">
 
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="179dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/image" />
+
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="374dp"
-        android:layout_height="476dp"
-        android:layout_marginBottom="44dp"
-        android:paddingTop="10dp"
+        android:id="@+id/imageView4"
+        android:layout_width="403dp"
+        android:layout_height="542dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img6" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="137dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="84dp"
+        android:id="@+id/brandName"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Brand Name"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="161dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:id="@+id/modelName"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:ems="10"
+        android:hint="Model Name"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/brandName"
+        app:layout_constraintStart_toEndOf="@+id/brandName"
+        app:layout_constraintTop_toTopOf="@+id/brandName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="136dp"
+        android:id="@+id/fuelType"
+        android:layout_width="144dp"
         android:layout_height="45dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Fuel Type"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="159dp"
+        android:id="@+id/gearType"
+        android:layout_width="144dp"
         android:layout_height="44dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:ems="10"
+        android:hint="Gear Type"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName6"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName6"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName6"
+        app:layout_constraintBottom_toBottomOf="@+id/fuelType"
+        app:layout_constraintStart_toEndOf="@+id/fuelType"
+        app:layout_constraintTop_toTopOf="@+id/fuelType"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
-        android:layout_width="134dp"
+        android:id="@+id/price"
+        android:layout_width="141dp"
         android:layout_height="49dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="Price"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuelType" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="159dp"
+        android:id="@+id/kilometer"
+        android:layout_width="141dp"
         android:layout_height="48dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:ems="10"
+        android:hint="Kilometer"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName9"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName9"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName9"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/price"
+        app:layout_constraintStart_toEndOf="@+id/price"
+        app:layout_constraintTop_toTopOf="@+id/price" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="86dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
-        android:background="#00FBFBFB"
-        android:shadowColor="#00FFFFFF"
-        android:textColor="#00FFFFFF"
-        android:textColorHighlight="#00FFFFFF"
-        android:textColorHint="#00FFFFFF"
-        android:textColorLink="#00FFFFFF"
-        app:backgroundTint="#E8E5E5"
-        app:icon="@drawable/ic_baseline_add_24"
-        app:iconSize="50dp"
-        app:iconTint="#070707"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView8"
-        app:rippleColor="#00FFFFFF" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="198dp"
-        android:layout_height="193dp"
-        android:layout_marginTop="48dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/ic_baseline_image_24" />
-
-    <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnOk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
         android:text="Done"
-        android:textColor="#000000"
-        app:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#519769"
         app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/color" />
+
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Color"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,13 +5,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.car_new_page.*
+import kotlinx.android.synthetic.main.car_add_page.*
 
 
 
 class CarAdapter(
     private val mainActivity: MainActivity,
     private val carList: List<Car>)
+
     : RecyclerView.Adapter<CarAdapter.ListItemHolder>(){
 
 
