@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.myapplication.MainActivity">
+    tools:context="com.example.myapplication.NewCarPage">
 
     <item
         android:id="@+id/done"
@@ -14,7 +14,7 @@
     <item
         android:id="@+id/image"
         android:icon="@drawable/done"
-        android:title="Item One"
+        android:title="picture"
         app:showAsAction="always" />
 
 

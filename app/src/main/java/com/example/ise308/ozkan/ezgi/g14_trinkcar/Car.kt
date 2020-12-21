@@ -15,6 +15,7 @@ class Car {
     var status: Boolean? = null
     var image: Image? = null
     var transmission : String? = null
+    var gearType : String? = null
 
 
 }
