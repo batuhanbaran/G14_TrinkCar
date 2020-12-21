@@ -8,6 +8,6 @@
     <item
         android:id="@+id/OptionItemSelected"
         android:icon="@drawable/ic_baseline_add_24"
-        android:title="Add new care"
+        android:title="Add new car"
         app:showAsAction="always" />
 </menu>

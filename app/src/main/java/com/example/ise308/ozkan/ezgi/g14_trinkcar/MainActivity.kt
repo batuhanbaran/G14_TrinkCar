@@ -13,20 +13,32 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
-
+        inflater.inflate(R.menu.main_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.car_new_page)
+        setContentView(R.layout.activity_main)
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId){
+            R.id.OptionItemSelected -> {
+                val intent = Intent(this, NewCarPage::class.java)
+
+                startActivity(intent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+
+    }
 
 
 

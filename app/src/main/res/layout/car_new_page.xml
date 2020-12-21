@@ -2,18 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/image"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="25dp"
+    android:id="@+id/image"
+    android:orderInCategory="100"
+    android:title="picture"
 
+    >
 
     <EditText
         android:id="@+id/brandName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:inputType="textPersonName"
         android:hint="Brand Name"
-
         app:layout_constraintBaseline_toBaselineOf="@+id/modelName"
         app:layout_constraintEnd_toStartOf="@+id/modelName"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -26,8 +30,8 @@
         android:layout_marginEnd="2dp"
         android:layout_marginRight="2dp"
         android:ems="10"
+        android:inputType="textPersonName"
         android:hint="Price"
-
         app:layout_constraintBaseline_toBaselineOf="@+id/fuelType"
         app:layout_constraintEnd_toStartOf="@+id/fuelType"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -39,8 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:ems="10"
-        android:hint="Model Name"
         android:inputType="textPersonName"
+        android:hint="Model Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/brandName"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,8 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="268dp"
         android:ems="10"
-        android:hint="Fuel-Type"
         android:inputType="textPersonName"
+        android:hint="Fuel-Type"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/price"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,8 +68,8 @@
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:ems="10"
+        android:inputType="textPersonName"
         android:hint="Gear-Type"
-
         app:layout_constraintBaseline_toBaselineOf="@+id/kilometer"
         app:layout_constraintEnd_toStartOf="@+id/kilometer"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -77,12 +81,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:ems="10"
-        android:hint="Kilometer"
         android:inputType="textPersonName"
+        android:hint="Kilometer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/gearType"
         app:layout_constraintTop_toBottomOf="@+id/fuelType" />
 
+    <Button
+        android:id="@+id/btnokk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gearType" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
